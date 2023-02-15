@@ -1,5 +1,6 @@
 import 'package:codigo6_components/pages/alert_page.dart';
 import 'package:codigo6_components/pages/avatar_page.dart';
+import 'package:codigo6_components/pages/input_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -97,6 +98,15 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => CardPage()));
+                },
+              ),
+              ItemMenuWidget(
+                title: "Inputs",
+                description: "Detalle de inputs",
+                icon: Icons.input,
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => InputPage()));
                 },
               ),
             ],

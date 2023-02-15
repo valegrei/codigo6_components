@@ -3,6 +3,8 @@ import 'package:codigo6_components/pages/avatar_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'card_page.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -74,18 +76,27 @@ class HomePage extends StatelessWidget {
                 title: "Avatars",
                 description: "Detalle del avatar",
                 icon: Icons.person,
-                onTap: (){
+                onTap: () {
                   Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => AvatarPage()));
+                      MaterialPageRoute(builder: (context) => AvatarPage()));
                 },
               ),
               ItemMenuWidget(
                 title: "Alertas",
                 description: "Detalle de las alertas",
                 icon: Icons.add_alert,
-                onTap: (){
+                onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => AlertPage()));
+                },
+              ),
+              ItemMenuWidget(
+                title: "Cards",
+                description: "Detalle de cards",
+                icon: Icons.credit_card_rounded,
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => CardPage()));
                 },
               ),
             ],

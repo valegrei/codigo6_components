@@ -1,5 +1,6 @@
 import 'package:codigo6_components/pages/alert_page.dart';
 import 'package:codigo6_components/pages/avatar_page.dart';
+import 'package:codigo6_components/pages/grid_page.dart';
 import 'package:codigo6_components/pages/input_page.dart';
 import 'package:codigo6_components/pages/list_page.dart';
 import 'package:flutter/material.dart';
@@ -17,21 +18,6 @@ class HomePage extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              // Image.network(
-              //     "https://i.pinimg.com/736x/ef/3f/df/ef3fdfd2f39a4f5d4a9f5557c0f21246.jpg"
-              // ),
-              // Container(
-              //   height: 200,
-              //   width: 200,
-              //   decoration: BoxDecoration(
-              //     color: Colors.red,
-              //   ),
-              //   child: ClipRRect(
-              //     borderRadius: BorderRadius.circular(20.0),
-              //     child: Image.network(
-              //         "https://i.pinimg.com/736x/ef/3f/df/ef3fdfd2f39a4f5d4a9f5557c0f21246.jpg"),
-              //   ),
-              // ),
               const SizedBox(
                 height: 30.0,
               ),
@@ -117,6 +103,15 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => ListPage()));
+                },
+              ),
+              ItemMenuWidget(
+                title: "GirdView",
+                description: "Detalle de gridview",
+                icon: Icons.grid_view_sharp,
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => GridPage()));
                 },
               ),
             ],

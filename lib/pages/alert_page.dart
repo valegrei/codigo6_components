@@ -134,6 +134,9 @@ class AlertPage extends StatelessWidget {
                     ),
                     Expanded(
                         child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFF789BD6)
+                          ),
                             onPressed: () {},
                             child: Text(
                               "Submit Review",
@@ -155,7 +158,7 @@ class AlertPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.pink,
-        title: Text("Alerte Page"),
+        title: const Text("Alerte Page"),
       ),
       body: Column(
         children: [
